@@ -4,26 +4,32 @@
 	$lname = $_POST['lname'];
 	$email = $_POST['email'];
 	$password = $_POST['password'];
+	$conpassword = $_POST['conpassword'];
 
 
 	#empty user input field error handlers
 	if(empty($fname)) {
-	header("location:signup.php?error=First name is required");
+	header("location:registration.html?error=First name is required");
 		exit();
 	}
 
 	else if(empty($lname)) {
-		header("location:signup.php?error=Last name is required");
+		header("location:registration.html?error=Last name is required");
 		exit();
 	}
 
 	else if(empty($email)) {
-		header("Location:signup.php?error=Email is required");
+		header("Location:registration.html?error=Email is required");
 		exit();
 	}
 
 	else if(empty($password)) {
-		header("Location:signup.php?error=Password is required");
+		header("Location:registration.html?error=Password is required");
+		exit();
+	}
+
+	else if(empty($conpassword)) {
+		header("Location:registration.html?error=Confirm Password is required");
 		exit();
 	}
 
@@ -39,8 +45,8 @@
 	} else {
 
 		#defining the data that needs to be sent to the database and their data types
-		$stmt = $conn->prepare("insert into signup (fname, lname, email, password) values(?, ?, ?, ?)");
-		$stmt->bind_param("ssss", $fname, $lname, $email, $password);
+		$stmt = $conn->prepare("insert into signup (fname, lname, email, password, conpassword) values(?, ?, ?, ?)");
+		$stmt->bind_param("ssss", $fname, $lname, $email, $password, $conpassword);
 		$execval = $stmt->execute();
 		echo $execval;
 
