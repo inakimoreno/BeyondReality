@@ -6,7 +6,7 @@
 
 	$password = "";
 
-	$db_name = "my_optimalperformance333";
+	$db_name = "beyondrealityDB";
 
 	$conn = mysqli_connect($sname, $email, $password, $db_name);
 
