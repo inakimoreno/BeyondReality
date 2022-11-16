@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <h1>
+            Enter the asset details
+        </h1>
+        <form action="../php/assetUpload.php" method="POST" enctype="multipart/form-data">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <br>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea>
+            <br>
+            <label for="category">Category:</label>
+            <input type="text" id="category" name="category">
+            <br>
+            <label for="supplier">Supplier:</label>
+            <input type="text" id="supplier" name="supplier">
+            <br>
+            <label for="asset">Asset:</label>
+            <input type="file" id="asset" name="asset" />
+            <input type="submit">
+        </form>
+
+
+    </body>
+</html>
