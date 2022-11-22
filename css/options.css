@@ -1,0 +1,63 @@
+ /* The Modal (background) */
+ .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    overflow: auto; /* Enable scroll if needed */
+    width: 100%;
+ }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+  }
+
+  .left {
+    margin-left: 5px;
+    margin-top: 12%;
+    float: left;
+    height: 300px;
+    overflow-y: scroll;
+  }
+
+  .right {
+    margin-right: 5px;
+    margin-top: 12%;
+    float: right;
+    max-height: 300px;
+    overflow-y: scroll;
+    padding: 0px;
+    width: 150px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.4);
+  }
+  
+  .close {
+    margin-top: 10.25%;
+    margin-left: 25%;
+  }
+
+  .renderedObject {
+    background:rgba(0, 0, 0, 0.5);
+    padding: 5px 25px;
+  }
+
+  .renderedObject:hover {
+    background:rgba(0, 0, 0, 0.4);
+  }
+
+  .selectedObject {
+    background:rgba(75, 0, 0, 0.5);
+    padding: 5px 25px;
+  }
+
+  .selectedObject:hover {
+    background:rgba(75, 0, 0, 0.4);
+  }
+
+
+ 
