@@ -1,0 +1,74 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: serif;
+  box-sizing: border-box;
+}
+
+body{
+  color: rgb(124, 221, 27);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 10PX;
+  background-color: rgb(36, 36, 36);
+  
+}
+
+div.container{
+  background-color: rgb(58, 58, 58);
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border-radius: 12px;
+}
+.avatar{
+  border-radius: 50%;
+  width: 100px;
+  height:100px;
+  position: absolute;
+  right: 47.3%;
+  top: 20%;
+  border-style: solid;
+  border-color: rgb(124, 221, 27);
+}
+div.heading{
+  padding-left:55px;
+  
+}
+div.firstname{
+  padding: 10PX;
+  
+}
+
+div.lastname{
+  padding: 10PX;
+
+}
+
+div.email{
+  padding: 10PX;
+
+}
+div.password{
+  padding: 10PX;
+
+}
+div.confirmpassword{
+  padding: 10PX;
+  
+}
+
+button{
+  border-radius: 12px;
+  padding: 5PX 40px;
+  padding-left: 60px;
+  padding-right: 65px;
+  background-color: rgb(124, 221, 27);
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: rgb(34, 122, 7);
+}

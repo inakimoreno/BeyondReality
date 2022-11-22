@@ -134,6 +134,10 @@
             const mesh = meshes[0];
             mesh.position = new BABYLON.Vector3(6, 5, 1);
             })
+            BABYLON.SceneLoader.ImportMesh("", "../assets/", "Cargoship.glb", scene, function (meshes) {
+            const mesh = meshes[0];
+            mesh.position = new BABYLON.Vector3(6, 10, 1);
+            })
 
             return scene;
         };
