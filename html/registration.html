@@ -1,50 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Registration page</title>
-    <link rel="stylesheet" type="text/css" href="../css/registration.css">
-    
-  </head>
-  <body>
-    
-    <div class="container">
-      <div class="heading">Registration</div>
-      <img src="../assets/avatar.png" class="avatar">
-      <form class="Data" action="index.html" method="post">
-        <div class="firstname">
-        <span class="information"></span>  
-        <input type="text" name="" value="First Name">
-        </div>
-        <div class="container">
-          <form class="Data" action="index.html" method="post">
-            <div class="lastname">
-            <span class="information"></span>
-            <input type="text" name="" value="Last Name">
-            </div>
-            <div class="container">
-              <form class="Data" action="index.html" method="post">
-                <div class="email">
-                <span class="information"></span>
-                <input type="text" name="" value="E-mail  ">
-                </div>
-                <div class="container">
-                  <form class="Data" action="index.html" method="post">
-                    <div class="password">
-                    <span class="information"></span>
-                    <input type="text" name="" value="Password">
-                    </div>
-                    <div class="container">
-                      <form class="Data" action="index.html" method="post">
-                        <div class="confirm password">
-                        <span class="information"></span>
-                        <input type="text" name="" value="Confirm Password">
-                        </div>
-                        </div>
-                        <button type="button">Get Started</button>
-                        </div>
-      </form>
-    </div>
 
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Registration page</title>
+  <link rel="stylesheet" type="text/css" href="../css/registration.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="heading">Registration</div>
+    <img src="../assets/avatar.png" class="avatar">
+    <form class="Data" action="../php/registration.php" method="post">
+      <input type="text" name="uname" value="Username">
+      <input type="text" name="email" value="E-mail  ">
+      <input type="text" name="password" value="Password">
+      <input type="text" name="conpassword" value="Confirm Password">
+      <button type="submit">Get Started</button>
+    </form>
+  </div>
+
+</body>
+
 </html>

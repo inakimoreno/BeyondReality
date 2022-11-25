@@ -4,5 +4,5 @@ session_start();
 session_unset();
 session_destroy();
 
-header("Location: immersivehub.html");
+header("Location: ../index.php");
 ?>

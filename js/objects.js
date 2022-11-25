@@ -28,16 +28,39 @@
             i++;
           }
         }
-    }
+        }
+        function getOwnFilePath(name) {
+            let file = new File(name,"assets/"+name+".glb");
+            return file.path;
+        }
+
+        function getOwnFile() {
+            let radioButtons = document.querySelectorAll('input[name="objectType"]');
+            let myFile = "";
+            let i = 0;
+            for (const radioButton of radioButtons) {
+              if (radioButton.checked) {
+                console.log(i)
+                console.log(document.getElementsByTagName("label")[i].innerHTML);
+                return getOwnFilePath(document.getElementsByTagName("label")[i].innerHTML);
+                break;
+              } else {
+                i++;
+              }
+            }
+        }
 
 ////////////////////////////////////////////////////////////////////////
-        let cube = new File("Cube","../assets/cube.glb");
-        let submarine = new File("Submarine","../assets/submarine.glb");
-        let coral = new File("Coral","../assets/coralBlue.glb");
+        let cube = new File("Cube","assets/cube.glb");
+        let submarine = new File("Submarine","assets/submarine.glb");
+        let coral = new File("Coral","assets/coralBlue.glb");
+
+        //let a = new File("a","assets/a.glb");
         
         temporaryImport(cube);
         temporaryImport(submarine);
         temporaryImport(coral);
+        //temporaryImport(a);
 
         function temporaryImport(file) {
             importedFiles.push(file)
@@ -87,6 +110,20 @@ function checkForRepeats(name) {
         function newObject2 () {
             myObject = new Object2;
             myObject.file = getFile();
+            myObject.x = document.getElementById("positionX").value;
+            myObject.y = document.getElementById("positionY").value;
+            myObject.z = document.getElementById("positionZ").value;
+            myObject.name = document.getElementById("name").value;
+            if(checkForRepeats(myObject.name)!=null) {
+                alert("Error: An Object with this name already exists")
+            } else {
+                renderObject(myObject);
+            }
+        }
+
+        function newOwnObject2 () {
+            myObject = new Object2;
+            myObject.file = getOwnFile();
             myObject.x = document.getElementById("positionX").value;
             myObject.y = document.getElementById("positionY").value;
             myObject.z = document.getElementById("positionZ").value;

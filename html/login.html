@@ -1,33 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Registration page</title>
-    <link rel="stylesheet" type="text/css" href="../css/registration.css">
-    
-  </head>
-  <body>
-    
-    <div class="container">
-      <div class="heading">Registration</div>
-      <img src="../assets/avatar.png" class="avatar">
-            <div class="container">
-              <form class="Data" action="index.html" method="post">
-                <div class="email">
-                <span class="information"></span>
-                <input type="text" name="" value="E-mail  ">
-                </div>
-                <div class="container">
-                  <form class="Data" action="index.html" method="post">
-                    <div class="password">
-                    <span class="information"></span>
-                    <input type="text" name="" value="Password">
-                    </div>
-                        </div>
-                        <button type="button">Get Started</button>
-                        </div>
-      </form>
-    </div>
 
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Registration page</title>
+  <link rel="stylesheet" type="text/css" href="../css/registration.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="heading">Registration</div>
+    <img src="../assets/avatar.png" class="avatar">
+      <div class="container">
+        <form class="Data" action="../php/login.php" method="post">
+          <div class="email">
+            <span class="information"></span>
+            <input type="text" name="email" value="E-mail  ">
+            <input type="text" name="password" value="Password">
+          </div>
+          <button type="submit">Get Started</button>
+        </form>
+     </div>
+    </div>
+</body>
+
 </html>
