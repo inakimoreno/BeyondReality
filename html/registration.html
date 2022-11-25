@@ -12,12 +12,23 @@
 
   <div class="container">
     <div class="heading">Registration</div>
-    <img src="../assets/avatar.png" class="avatar">
     <form class="Data" action="../php/registration.php" method="post">
-      <input type="text" name="uname" value="Username">
-      <input type="text" name="email" value="E-mail  ">
-      <input type="text" name="password" value="Password">
-      <input type="text" name="conpassword" value="Confirm Password">
+      <div class="firstname">
+        <input type="text" name="uname" placeholder="First name">
+      </div>
+      <div class="lastname">
+        <input type="text" name="uname" placeholder="Last name">
+      </div>
+      <div class="email">
+        <input type="text" name="email" placeholder="E-mail">
+      </div>
+      <div class="password">
+        <input type="text" name="password" placeholder="Password">
+      </div>
+      <div class="conpassword">
+        <input type="text" name="conpassword" placeholder="Confirm Password">
+      </div>
+      <br><br>
       <button type="submit">Get Started</button>
     </form>
   </div>

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Registration page</title>
-  <link rel="stylesheet" type="text/css" href="../css/registration.css">
+  <link rel="stylesheet" type="text/css" href="../css/login.css">
 
 </head>
 
@@ -12,13 +12,17 @@
 
   <div class="container">
     <div class="heading">Registration</div>
-    <img src="../assets/avatar.png" class="avatar">
       <div class="container">
         <form class="Data" action="../php/login.php" method="post">
           <div class="email">
             <span class="information"></span>
-            <input type="text" name="email" value="E-mail  ">
-            <input type="text" name="password" value="Password">
+            <div class="email">
+              <input type="text" name="email" placeholder="E-mail">
+            </div>
+            <div class="password">
+            <input type="text" name="password" placeholder="Password">
+          </div>
+          <br> <br>
           </div>
           <button type="submit">Get Started</button>
         </form>

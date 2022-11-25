@@ -1,0 +1,67 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: serif;
+  box-sizing: border-box;
+}
+
+body{
+  color: rgb(124, 221, 27);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 10PX;
+  background-color: rgb(36, 36, 36);
+  
+}
+
+.container{
+  background-color: rgb(58, 58, 58);
+  padding: 25px 20px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.heading {
+  padding: 5px 5px;
+  text-align: center;
+}
+
+.firstname{
+  padding: 10PX;
+  text-align: center;
+}
+
+.lastname{
+  padding: 10PX;
+  text-align: center;
+}
+
+.email{
+  padding: 10PX;
+  text-align: center;
+}
+.password{
+  padding: 10PX;
+  text-align: center;
+
+}
+.confirmpassword{
+  padding: 10PX;
+  text-align: center;
+}
+
+button{
+  border-radius: 12px;
+  padding: 5px 40px;
+  text-align: center;
+  border: 1px solid;
+  background-color: rgb(124, 221, 27);
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: rgb(34, 122, 7);
+}
